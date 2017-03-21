@@ -1,2 +1,3 @@
 # fortran_for_you
-Coding Fortran with some tutorial in free of time.
+Coding and practicing Fortran program by doing some tutorial in free of time.
+Keep moving and step forward.
