@@ -1,3 +1,11 @@
 # fortran_for_you
-Coding and practicing Fortran program by doing some tutorial in free of time.
-Keep moving and step forward.
+Coding Fortran programing lang8 as a hobby.
+
+# Usage
+## For Linux user
+Simply compile the code yourself on your Linux OS machine using gfortran.
+gfortran fort.f90 -o fort
+f95 fort.f90 -o fort
+
+## For Window user
+Install g++ gcc gfortran, then install fortran IDE Program, says Geany text editor. https://www.geany.org/
