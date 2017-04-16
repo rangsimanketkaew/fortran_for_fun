@@ -1,6 +1,5 @@
 C********************************************************************
 C fortran script for HF calc using STP-3G of HeH+
-C R. Ketkaew
 C
 C MINIMAL BASIS STO-3G CALCULATION ON HEH+
 C
