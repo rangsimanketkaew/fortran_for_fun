@@ -2,7 +2,7 @@ program solve_q
       real:: a, b,c
       real::discriminant
       real::x1, x2
-      print*, "Type a,b,c which are coofficient of your Quardratic equation."
+      print*, "Type a,b,c which are coefficient of your quadratic equation."
       read *, a, b, c
       print*, "Your equation is ==> ","(",a,"x^2) + ","(",b,"x) + ","(",c,")"," = 0"
       discriminant = b**2 - 4*a*c
