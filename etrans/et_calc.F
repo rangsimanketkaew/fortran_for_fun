@@ -1,6 +1,7 @@
       logical function et_calc(rtdb,Vba)
       implicit none
 #include "errquit.fh"
+c     Fork from the original source code in $NWCHEM/src/
 c
 c     This function calculates Vba, the electron transfer matrix element.
 *
