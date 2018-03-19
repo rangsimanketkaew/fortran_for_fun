@@ -1,4 +1,4 @@
-# fortran_for_you
+# fortran_for_fun
 A very personal repository of fortran code. Coding fortran programing lang8 as a hobby.
 - etrans - ET module in NWChem, edit & commit code.
 - fortran for kids.
