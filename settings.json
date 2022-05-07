@@ -1,0 +1,21 @@
+// Setting for writing Fortran in VS Code
+
+{
+  // Code runner setting
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt -ffree-form && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+  // Fortran
+  "fortran.fortls.path": "fortls",
+  "fortran.linter.extraArgs": ["-ffree-form"],
+  "fortran.provide.symbols": "fortls",
+  "fortran.fortls.notifyInit": true,
+  "files.associations": {
+    "*.F": "FortranFreeForm",
+    "*.f": "FortranFreeForm"
+  },
+}
