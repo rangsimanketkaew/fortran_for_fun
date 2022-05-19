@@ -263,15 +263,54 @@
 ! end program arr
 
 ! Change Fortran array order to C array order
-program arr
+! program arr
+!     implicit none
+!     real :: F(5,3,8)
+!     real :: C(8,3,5)
+!     integer :: i
+
+!     C = reshape(F, (/8,3,5/), order=(/3, 2, 1/))
+
+!     do i=1,8
+!         print *, C(i,:,:)
+!     end do
+! end program arr
+
+! ------------
+! Manipulation
+! ------------
+
+! program arr
+!     implicit none
+!     integer :: a(2,2), b(2,2), c(2,2)
+ 
+!     a = reshape([1,2,3,4],shape(a))
+!     b = reshape([5,6,7,8],shape(b))
+ 
+!     ! matrix multiplication
+!     ! c = matmul(a,b)
+
+!     ! tranpose
+!     ! print *, transpose(b)
+
+!     ! multiply again
+!     c = matmul(a,transpose(b))
+!     print *,c
+!  end program arr
+
+program conjgtest
+    use iso_fortran_env, only: real64
     implicit none
-    real :: F(5,3,8)
-    real :: C(8,3,5)
-    integer :: i
 
-    C = reshape(F, (/8,3,5/), order=(/3, 2, 1/))
+    real(real64) :: r(2, 4)
+    complex(real64) :: c(2,2)
 
-    do i=1,8
-        print *, C(i,:,:)
-    end do
-end program arr
+    call random_number(r)
+    c = cmplx(r(:, 1:2), r(:, 3:4), real64)
+
+    print *, c(1,1), "and", conjg(c(1,1))
+    print *, c(1,2), "and", conjg(c(1,2))
+    print *, c(2,1), "and", conjg(c(2,1))
+    print *, c(2,2), "and", conjg(c(2,2))
+
+end program conjgtest
